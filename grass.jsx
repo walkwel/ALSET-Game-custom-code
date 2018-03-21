@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { TileMap } from 'react-game-kit';
+import grass from './assets/grass.jpg'
 
 export default class Grass extends Component {
 	constructor(props) {
@@ -20,7 +21,7 @@ export default class Grass extends Component {
 		<div style={this.getWrapperStyles()}>
 			<TileMap
 			  style={{ top: 0, left:0 }}
-			  src={"assets/grass.jpg"}
+			  src={grass}
 			  rows={5}
 			  columns={8}
 			  tileSize={128}
