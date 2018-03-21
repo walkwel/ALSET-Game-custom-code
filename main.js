@@ -27,6 +27,7 @@ class MyNewGame extends Component{
 				mode="javascript"
 				theme="github"
 				name="aceEditor"
+				width="100%"
 				onChange={this.handleCodeChange}
 				fontSize={14}
 				showPrintMargin={true}
