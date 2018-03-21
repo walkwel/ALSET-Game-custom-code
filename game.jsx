@@ -15,7 +15,8 @@ import GameStore2 from './store/game-store2.jsx';
 import GameStore3 from './store/game-store3.jsx';
 import GameStore4 from './store/game-store4.jsx';
 import { observer } from 'mobx-react';
-
+import character1 from './assets/character-blonde.png'
+import character2 from './assets/character-brunette.png'
 class Game extends Component {
 	constructor(props){
 		super(props);
@@ -86,7 +87,7 @@ class Game extends Component {
 						<Character
 							keys = {this.keyListener1}
 							store = {GameStore}
-							imgSrc = {"assets/character-blonde.png"}
+							imgSrc = {character1}
 							key = {0}
 							index = {0}
 							gameId = {this.props.gameId}
@@ -94,7 +95,7 @@ class Game extends Component {
 						<Character
 							keys = {this.keyListener2}
 							store = {GameStore}
-							imgSrc = {"assets/character-brunette.png"}
+							imgSrc = {character2}
 							key = {1}
 							index = {1}
 							gameId = {this.props.gameId}
