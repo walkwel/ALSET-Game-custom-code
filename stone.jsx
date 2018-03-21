@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { TileMap, Body } from 'react-game-kit';
 import PropTypes from "prop-types";
 import Matter from 'matter-js';
+import stone from "./assets/gem.png"
 
 export default class Stone extends Component {
 	static propTypes = {
@@ -55,7 +56,7 @@ export default class Stone extends Component {
 		<div id={"stoneGem-"+this.props.index+"-"+this.props.gameId} data-id={this.props.index} style={this.getWrapperStyles()}>
 			<TileMap
 			  style={{ top: 0, left:0 }}
-			  src={"assets/gem.png"}
+			  src={stone}
 			  rows={1}
 			  columns={1}
 			  tileSize={64}
